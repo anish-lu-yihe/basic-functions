@@ -15,5 +15,5 @@ To those who are more experienced, knowledgeable and/or intelligent in programmi
 I sincerely hope that you would leave me any comments for correction and/or improvement, 
 or suggest me any existing packages/modules that outperforms mine.
 Although I do not care too much about the efficiency,
-several of my projects are dependent on them so I need them to be correct.
-In addition, as they are used often by me, any tiny improvement could lead to potentially a bigger one.
+several of my projects are dependent on them so I need them to be absolutely correct.
+In addition, as the functions are used a lot, any tiny improvement could lead to potentially a bigger one.
