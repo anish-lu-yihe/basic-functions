@@ -6,6 +6,7 @@ but I cannot promise and thus I choose the MIT license.
 
 ## List of functions
 * `collapse(probas)`: takes in probabilities and outputs binary states.
+* `duoramp(x, low, high)`: takes in numbers and changes any out-of-range numbers to the lower or upper limit.
 * `logistic(x, temperature)`: takes in activations and outputs probabilities, common for artificial neurons.
 * `softmax(x, temperature)`: takes in activations and outputs probabilities, when a neural layer has lateral inhibition.
 * `entropy(P, base)`: takes in probabilities distributions and outputs their entropy values.
