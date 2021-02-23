@@ -14,6 +14,29 @@ def collapse(probas):
     b = p >= np.random.rand(*p.shape)
     return b.astype(int)
 
+def duoramp(x, low = None, high = None):
+    """
+    Parameters
+    ----------
+    x : Anything that can be transformed into an numpy array
+    low : A number, optional
+        The lowest value an entry in x can be. The default is None. 
+    high : A number, optional
+        The highest value an entry in x can be. The default is None.
+
+    Returns
+    -------
+    y : A numpy array
+        The value of each element is between low and high.
+
+    """
+    y = np.asarray(x)
+    if low is not None:
+        y[y < low] = low
+    if high is not None:
+        y[y > high] = high
+    return y
+
 def logistic(x, temperature = 1.0):
     """
     Parameters
