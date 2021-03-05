@@ -1,8 +1,11 @@
-# Basic Functions
+# Basic functions
 Here I maintain a handful of basic Python 3 functions, that are useful in multiple projects of mine.
 For my study being often theoretical, I am not conern too much about huge tensors and `numpy` is the only dependence for this repository.
 I attempt to keep these functions up-to-date with the newest version of Python 3 and `numpy`,
 but I cannot promise and thus I choose the MIT license.
+
+# Common functions
+Some common functions are also maintained here. There are not well documented, but they are useful to me.
 
 ## List of functions
 * `collapse(probas)`: takes in probabilities and outputs binary states.
