@@ -4,9 +4,6 @@ For my study being often theoretical, I am not conern too much about huge tensor
 I attempt to keep these functions up-to-date with the newest version of Python 3 and `numpy`,
 but I cannot promise and thus I choose the MIT license.
 
-# Common functions
-Some common functions are also maintained here. There are not well documented, but they are useful to me.
-
 ## List of functions
 * `collapse(probas)`: takes in probabilities and outputs binary states.
 * `duoramp(x, low, high)`: takes in numbers and changes any out-of-range numbers to the lower or upper limit.
