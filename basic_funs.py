@@ -1,18 +1,19 @@
 import numpy as np
 
-def collapse(probas):
+def collapse(probas, output_type = 'bin'):
     """
     Parameters
     ----------
     probas: An array of probablities.
+    output_type: If ternary, output can be -1, 0 and 1.
     
     Returns
     -------
     b: An array of binary states, whose dimensionality is identical to probas.
     """
-    p = np.asarray(probas)
-    b = p >= np.random.rand(*p.shape)
-    return b.astype(int)
+    p = np.abs(probas)
+    b = (p >= np.random.rand(*p.shape)).astype(np.int)
+    return np.where(probas >= 0, b, {'bin': 0, 'ter': -b}[output_type])        
 
 def duoramp(x, low = None, high = None):
     """
