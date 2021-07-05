@@ -121,4 +121,6 @@ def entropy(P, base = None):
     logp = np.log(norp) / denom
     H = np.asarray([-np.dot(ps, logps) for ps, logps in zip(norp, logp)])
     return H
-    
+
+def kl_divergence(p, q, base = np.e):
+    return np.sum(np.where(p != 0, p * np.log(p / q), 0)) / np.log(base)
